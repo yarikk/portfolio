@@ -75,6 +75,21 @@ h1 {
     max-width: 600px;
 }
 
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+
+.profile-pic:hover {
+    transform: scale(1.05); /* Фото трохи збільшиться при наведенні */
+}
+
 /* Проєкти */
 #projects {
     padding: 80px 10%;
