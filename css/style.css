@@ -161,3 +161,10 @@ footer {
     font-size: 0.9rem;
     color: var(--text-muted);
 }
+
+/* Адаптивність для телефонів */
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    nav ul { flex-direction: column; align-items: center; }
+    nav ul li { margin: 10px 0; }
+}
