@@ -145,39 +145,34 @@ article a:hover {
 
 #repositories h3 {
     font-size: 1.8rem;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: var(--text-main);
 }
 
-.repo-links {
-    font-size: 1.2rem;
+.repo-block {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 15px;
 }
 
-.repo-links a, 
-.repo-links a:link, 
-.repo-links a:visited {
+.repo-block a, 
+.repo-block a:link, 
+.repo-block a:visited {
     color: var(--accent) !important;
     text-decoration: none;
+    font-size: 1.2rem;
     font-weight: 500;
-    padding: 4px 8px;
+    padding: 6px 12px;
     border-radius: 4px;
     transition: var(--transition);
     display: inline-block;
 }
 
-.repo-links a:hover {
+.repo-block a:hover {
     background: rgba(56, 189, 248, 0.1);
     text-decoration: underline;
     color: var(--text-main) !important;
-}
-
-.repo-links .separator {
-    color: var(--text-muted);
-    user-select: none;
 }
 
 @media (max-width: 768px) {
