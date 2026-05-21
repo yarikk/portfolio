@@ -11,7 +11,7 @@
 
 - HTML5
 - Markdown
-- GitHub
+- GitHub & Git
 - CSS
 
 ---
