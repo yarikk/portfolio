@@ -1,10 +1,9 @@
-/* Основні налаштування */
 :root {
-    --bg-color: #0f172a;        /* Темно-синій фон */
-    --card-bg: #1e293b;         /* Колір карток */
-    --text-main: #f8fafc;       /* Основний текст */
-    --text-muted: #94a3b8;     /* Другорядний текст */
-    --accent: #38bdf8;          /* Акцентний колір (блакитний) */
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent: #38bdf8;
     --transition: all 0.3s ease;
 }
 
@@ -19,13 +18,12 @@ body {
     background-color: var(--bg-color);
     color: var(--text-main);
     line-height: 1.6;
-    scroll-behavior: smooth; /* Плавна прокрутка до розділів */
+    scroll-behavior: smooth;
 }
 
-/* Навігація */
 header {
     background: rgba(15, 23, 42, 0.8);
-    backdrop-filter: blur(10px); /* Ефект розмиття фону */
+    backdrop-filter: blur(10px);
     padding: 20px 10%;
     position: sticky;
     top: 0;
@@ -53,7 +51,6 @@ nav a:hover {
     color: var(--accent);
 }
 
-/* Головний екран (About) */
 #about {
     height: 60vh;
     display: flex;
@@ -87,10 +84,9 @@ h1 {
 }
 
 .profile-pic:hover {
-    transform: scale(1.05); /* Фото трохи збільшиться при наведенні */
+    transform: scale(1.05);
 }
 
-/* Проєкти */
 #projects {
     padding: 80px 10%;
 }
@@ -143,7 +139,41 @@ article a:hover {
     color: var(--bg-color);
 }
 
-/* Контакти */
+#repositories {
+    padding: 40px 10%;
+    text-align: center;
+}
+
+#repositories h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--text-main);
+}
+
+.repo-links {
+    font-size: 1.2rem;
+}
+
+.repo-links a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.repo-links a:hover {
+    background: rgba(56, 189, 248, 0.1);
+    text-decoration: underline;
+}
+
+.repo-links .separator {
+    color: var(--text-muted);
+    margin: 0 15px;
+    user-select: none;
+}
+
 #contact {
     padding: 80px 10%;
     text-align: center;
@@ -162,9 +192,10 @@ footer {
     color: var(--text-muted);
 }
 
-/* Адаптивність для телефонів */
 @media (max-width: 768px) {
     h1 { font-size: 2rem; }
     nav ul { flex-direction: column; align-items: center; }
     nav ul li { margin: 10px 0; }
+    .repo-links .separator { display: none; }
+    .repo-links a { display: block; margin: 10px 0; }
 }
