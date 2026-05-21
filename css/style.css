@@ -145,7 +145,7 @@ article a:hover {
 
 #repositories h3 {
     font-size: 1.8rem;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: var(--text-main);
 }
 
@@ -154,23 +154,25 @@ article a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
-    gap: 10px;
+    gap: 15px;
 }
 
-.repo-links a {
-    color: var(--accent);
+.repo-links a, 
+.repo-links a:link, 
+.repo-links a:visited {
+    color: var(--accent) !important;
     text-decoration: none;
     font-weight: 500;
     padding: 4px 8px;
     border-radius: 4px;
     transition: var(--transition);
-    white-space: nowrap;
+    display: inline-block;
 }
 
 .repo-links a:hover {
     background: rgba(56, 189, 248, 0.1);
     text-decoration: underline;
+    color: var(--text-main) !important;
 }
 
 .repo-links .separator {
@@ -178,27 +180,12 @@ article a:hover {
     user-select: none;
 }
 
-#contact {
-    padding: 80px 10%;
-    background: #020617;
-}
-
-#contact a {
-    color: var(--accent);
-    text-decoration: none;
-}
-
-footer {
-    padding: 40px;
-    font-size: 0.9rem;
-    color: var(--text-muted);
-}
-
 @media (max-width: 768px) {
-    h1 { font-size: 2rem; }
-    nav ul { flex-direction: column; align-items: center; }
-    nav ul li { margin: 10px 0; }
-    .repo-links { flex-wrap: wrap; }
-    .repo-links .separator { display: none; }
-    .repo-links a { display: block; width: 100%; margin: 5px 0; }
+    .repo-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .repo-links .separator {
+        display: none;
+    }
 }
