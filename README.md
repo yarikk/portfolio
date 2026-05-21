@@ -5,3 +5,13 @@
 * **Репозиторій:** [https://github.com/yarikk/portfolio](https://github.com/yarikk/portfolio)
 ### Загальний репозиторій
 * **Перейти до репозиторію** (https://github.com/PorokhovnichenkoIryna/kn-2026)
+---
+
+## Технології, які я використовував
+
+- HTML5
+- Markdown
+- GitHub
+- CSS
+
+---
